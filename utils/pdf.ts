@@ -1,5 +1,4 @@
-
-import { PDFConfig, Orientation, PaperSize } from '../types';
+import { PDFConfig, Orientation, PaperSize } from '../types.ts';
 
 declare const html2canvas: any;
 declare const jspdf: any;

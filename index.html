@@ -8,45 +8,36 @@
     <!-- Primary Meta Tags -->
     <title>PDFlow | Private HTML to PDF Converter | No Ads & 100% Local</title>
     <meta name="title" content="PDFlow | Private HTML to PDF Converter | No Ads & 100% Local">
-    <meta name="description" content="Convert HTML and CSS to professional PDF documents 100% locally in your browser. Ad-free, private, and secure. Your data never leaves your device.">
+    <meta name="description" content="Convert HTML and CSS to professional PDF documents 100% locally in your browser. Ad-free, private, and secure on pdflow.ai-worker.tech.">
     <meta name="keywords" content="HTML to PDF, browser-based PDF converter, private PDF tool, ad-free converter, client-side PDF, web to PDF, developer tools, PDFlow, ai-worker">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pdflow.ai-worker.tech/">
     <meta property="og:title" content="PDFlow | Free Private HTML to PDF Converter">
-    <meta property="og:description" content="100% private, browser-native HTML to PDF conversion. No servers, no ads, just high-fidelity documents.">
+    <meta property="og:description" content="100% private, browser-native HTML to PDF conversion. No servers, no ads.">
     <meta property="og:image" content="https://pdflow.ai-worker.tech/og-image.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://pdflow.ai-worker.tech/">
-    <meta property="twitter:title" content="PDFlow | Private HTML to PDF">
-    <meta property="twitter:description" content="Securely convert HTML to PDF locally. No registration or data collection.">
-    <meta property="twitter:image" content="https://pdflow.ai-worker.tech/og-image.png">
 
     <!-- Canonical & Manifest -->
     <link rel="canonical" href="https://pdflow.ai-worker.tech/">
     <link rel="manifest" href="/manifest.json">
 
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "PDFlow",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "DeveloperApplication, BusinessApplication",
-      "url": "https://pdflow.ai-worker.tech/",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "description": "A 100% client-side HTML to PDF converter prioritizing privacy and high-fidelity rendering on the ai-worker.tech platform.",
-      "featureList": "Local conversion, No ads, No tracking, Instant templates, CSS Support"
-    }
-    </script>
+    <!-- External Script Dependencies (Globals) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.475.0?external=react",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -57,20 +48,9 @@
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         ::selection { background-color: #4f46e5; color: white; }
     </style>
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
-  }
-}
-</script>
 </head>
 <body class="bg-slate-50 text-slate-900">
     <div id="root"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script type="module" src="index.tsx"></script>
 </body>
 </html>

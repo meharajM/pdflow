@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { 
   Download, 
@@ -17,9 +16,9 @@ import {
   FileCode,
   LayoutTemplate
 } from 'lucide-react';
-import { DEFAULT_HTML, TEMPLATES } from './constants';
-import { PaperSize, Orientation, PDFConfig, Template } from './types';
-import { generatePDFFromIframe } from './utils/pdf';
+import { DEFAULT_HTML, TEMPLATES } from './constants.tsx';
+import { PaperSize, Orientation, PDFConfig, Template } from './types.ts';
+import { generatePDFFromIframe } from './utils/pdf.ts';
 
 const App: React.FC = () => {
   const [htmlCode, setHtmlCode] = useState(DEFAULT_HTML);
